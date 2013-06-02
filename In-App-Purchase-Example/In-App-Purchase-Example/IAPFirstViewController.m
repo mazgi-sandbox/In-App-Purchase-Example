@@ -9,6 +9,7 @@
 #import "IAPFirstViewController.h"
 
 @interface IAPFirstViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *productsTableView;
 
 @end
 
@@ -35,4 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setProductsTableView:nil];
+    [super viewDidUnload];
+}
 @end
