@@ -16,6 +16,8 @@
 		26B98B97175B37F300C5FBEA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B98B96175B37F300C5FBEA /* Default.png */; };
 		26B98B99175B37F300C5FBEA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B98B98175B37F300C5FBEA /* Default@2x.png */; };
 		26B98B9B175B37F300C5FBEA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26B98B9A175B37F300C5FBEA /* Default-568h@2x.png */; };
+		26B98BA4175B397200C5FBEA /* IAPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B98BA2175B397200C5FBEA /* IAPFirstViewController.m */; };
+		26B98BA5175B397200C5FBEA /* IAPFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B98BA3175B397200C5FBEA /* IAPFirstViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		26B98B96175B37F300C5FBEA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		26B98B98175B37F300C5FBEA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		26B98B9A175B37F300C5FBEA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		26B98BA1175B397200C5FBEA /* IAPFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPFirstViewController.h; sourceTree = "<group>"; };
+		26B98BA2175B397200C5FBEA /* IAPFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPFirstViewController.m; sourceTree = "<group>"; };
+		26B98BA3175B397200C5FBEA /* IAPFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAPFirstViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 				26B98B93175B37F300C5FBEA /* IAPAppDelegate.h */,
 				26B98B94175B37F300C5FBEA /* IAPAppDelegate.m */,
 				26B98B8B175B37F300C5FBEA /* Supporting Files */,
+				26B98BA1175B397200C5FBEA /* IAPFirstViewController.h */,
+				26B98BA2175B397200C5FBEA /* IAPFirstViewController.m */,
+				26B98BA3175B397200C5FBEA /* IAPFirstViewController.xib */,
 			);
 			path = "In-App-Purchase-Example";
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				26B98B97175B37F300C5FBEA /* Default.png in Resources */,
 				26B98B99175B37F300C5FBEA /* Default@2x.png in Resources */,
 				26B98B9B175B37F300C5FBEA /* Default-568h@2x.png in Resources */,
+				26B98BA5175B397200C5FBEA /* IAPFirstViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			files = (
 				26B98B91175B37F300C5FBEA /* main.m in Sources */,
 				26B98B95175B37F300C5FBEA /* IAPAppDelegate.m in Sources */,
+				26B98BA4175B397200C5FBEA /* IAPFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
