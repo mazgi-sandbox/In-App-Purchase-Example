@@ -7,16 +7,16 @@
 //
 
 #import "IAPAppDelegate.h"
-#import "IAPFirstViewController.h"
+#import "IAPProductListViewController.h"
 
 @implementation IAPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    IAPFirstViewController* firstViewController = [[IAPFirstViewController alloc]initWithNibName:nil bundle:nil];
-    UIViewController* rootViewController = [[UINavigationController alloc]initWithRootViewController:firstViewController];
+    UIViewController* rootViewController = [[IAPProductListViewController alloc]initWithNibName:nil bundle:nil];
+    UIViewController* navigationViewController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = rootViewController;
+    self.window.rootViewController = navigationViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
