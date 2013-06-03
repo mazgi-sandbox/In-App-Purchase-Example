@@ -13,7 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIViewController* rootViewController = [[IAPFirstViewController alloc]initWithNibName:nil bundle:nil];
+    IAPFirstViewController* firstViewController = [[IAPFirstViewController alloc]initWithNibName:nil bundle:nil];
+    UIViewController* rootViewController = [[UINavigationController alloc]initWithRootViewController:firstViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
