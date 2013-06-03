@@ -8,6 +8,7 @@
 
 #import "IAPProductTypeListViewController.h"
 #import "IAPProductType.h"
+#import "IAPProductListViewController.h"
 
 @interface IAPProductTypeListViewController ()
 @property (strong, nonatomic) NSDictionary* types;
@@ -47,6 +48,17 @@
     }
     cell.textLabel.text = [self.types objectForKey:[self.typeKeys objectAtIndex:indexPath.row]];
     return cell;
+}
+
+#pragma mark - UITableViewDelegate methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    IAPProductListViewController* productListViewController = [[IAPProductListViewController alloc]initWithNibName:nil bundle:nil];
+    //TODO: set product type
+    [self.navigationController pushViewController:productListViewController animated:YES];
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - view lifecycle
