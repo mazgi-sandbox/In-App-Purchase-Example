@@ -22,11 +22,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.types = [NSDictionary dictionaryWithObjectsAndKeys:
-                      @"consumable products", IAPProductTypeKeyConsumable,
-                      @"non consumable products", IAPProductTypeKeyNonConsumable,
-                      @"auto renewable subscriptions", IAPProductTypeKeyAutoRenewableSubscriptions,
-                      @"free subscription", IAPProductTypeKeyFreeSubscription,
-                      @"non renewing subscription", IAPProductTypeKeyNonRenewingSubscription,
+                      @"Consumable", IAPProductTypeKeyConsumable,
+                      @"Non-Consumable", IAPProductTypeKeyNonConsumable,
+                      @"Auto-Renewable Subscriptions", IAPProductTypeKeyAutoRenewableSubscriptions,
+                      @"Free Subscription", IAPProductTypeKeyFreeSubscription,
+                      @"Non-Renewing Subscription", IAPProductTypeKeyNonRenewingSubscription,
                       nil];
         self.typeKeys = [self.types allKeys];
     }
