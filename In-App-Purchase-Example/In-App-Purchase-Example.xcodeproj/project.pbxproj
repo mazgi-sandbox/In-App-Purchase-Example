@@ -11,6 +11,8 @@
 		269D9BF7175CD9E1007AF0CF /* IAPProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269D9BF5175CD9E1007AF0CF /* IAPProductListViewController.xib */; };
 		269D9BFB175CDA03007AF0CF /* IAPProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9BF9175CDA03007AF0CF /* IAPProductDetailViewController.m */; };
 		269D9BFC175CDA03007AF0CF /* IAPProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269D9BFA175CDA03007AF0CF /* IAPProductDetailViewController.xib */; };
+		269D9C00175CDB9E007AF0CF /* IAPProductTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9BFE175CDB9E007AF0CF /* IAPProductTypeListViewController.m */; };
+		269D9C01175CDB9E007AF0CF /* IAPProductTypeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269D9BFF175CDB9E007AF0CF /* IAPProductTypeListViewController.xib */; };
 		26B98B85175B37F300C5FBEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B84175B37F300C5FBEA /* UIKit.framework */; };
 		26B98B87175B37F300C5FBEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B86175B37F300C5FBEA /* Foundation.framework */; };
 		26B98B89175B37F300C5FBEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B88175B37F300C5FBEA /* CoreGraphics.framework */; };
@@ -31,6 +33,9 @@
 		269D9BF8175CDA03007AF0CF /* IAPProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProductDetailViewController.h; sourceTree = "<group>"; };
 		269D9BF9175CDA03007AF0CF /* IAPProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProductDetailViewController.m; sourceTree = "<group>"; };
 		269D9BFA175CDA03007AF0CF /* IAPProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAPProductDetailViewController.xib; sourceTree = "<group>"; };
+		269D9BFD175CDB9E007AF0CF /* IAPProductTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProductTypeListViewController.h; sourceTree = "<group>"; };
+		269D9BFE175CDB9E007AF0CF /* IAPProductTypeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProductTypeListViewController.m; sourceTree = "<group>"; };
+		269D9BFF175CDB9E007AF0CF /* IAPProductTypeListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAPProductTypeListViewController.xib; sourceTree = "<group>"; };
 		26B98B81175B37F300C5FBEA /* In-App-Purchase-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In-App-Purchase-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B98B84175B37F300C5FBEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26B98B86175B37F300C5FBEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +104,9 @@
 				26B98BA1175B397200C5FBEA /* IAPFirstViewController.h */,
 				26B98BA2175B397200C5FBEA /* IAPFirstViewController.m */,
 				26B98BA3175B397200C5FBEA /* IAPFirstViewController.xib */,
+				269D9BFD175CDB9E007AF0CF /* IAPProductTypeListViewController.h */,
+				269D9BFE175CDB9E007AF0CF /* IAPProductTypeListViewController.m */,
+				269D9BFF175CDB9E007AF0CF /* IAPProductTypeListViewController.xib */,
 				269D9BF3175CD9E1007AF0CF /* IAPProductListViewController.h */,
 				269D9BF4175CD9E1007AF0CF /* IAPProductListViewController.m */,
 				269D9BF5175CD9E1007AF0CF /* IAPProductListViewController.xib */,
@@ -181,6 +189,7 @@
 				26B98BA5175B397200C5FBEA /* IAPFirstViewController.xib in Resources */,
 				269D9BF7175CD9E1007AF0CF /* IAPProductListViewController.xib in Resources */,
 				269D9BFC175CDA03007AF0CF /* IAPProductDetailViewController.xib in Resources */,
+				269D9C01175CDB9E007AF0CF /* IAPProductTypeListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,7 @@
 				26B98BA4175B397200C5FBEA /* IAPFirstViewController.m in Sources */,
 				269D9BF6175CD9E1007AF0CF /* IAPProductListViewController.m in Sources */,
 				269D9BFB175CDA03007AF0CF /* IAPProductDetailViewController.m in Sources */,
+				269D9C00175CDB9E007AF0CF /* IAPProductTypeListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

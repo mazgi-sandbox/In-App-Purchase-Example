@@ -7,13 +7,13 @@
 //
 
 #import "IAPAppDelegate.h"
-#import "IAPProductListViewController.h"
+#import "IAPProductTypeListViewController.h"
 
 @implementation IAPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIViewController* rootViewController = [[IAPProductListViewController alloc]initWithNibName:nil bundle:nil];
+    UIViewController* rootViewController = [[IAPProductTypeListViewController alloc]initWithNibName:nil bundle:nil];
     UIViewController* navigationViewController = [[UINavigationController alloc]initWithRootViewController:rootViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = navigationViewController;
