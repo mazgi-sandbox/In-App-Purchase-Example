@@ -17,6 +17,7 @@
 		269D9C08175DBC78007AF0CF /* IAPProductListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9C07175DBC78007AF0CF /* IAPProductListLoader.m */; };
 		269D9C0B175DBC8F007AF0CF /* IAPProductPurchaser.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9C0A175DBC8F007AF0CF /* IAPProductPurchaser.m */; };
 		269D9C0E175DBCC6007AF0CF /* IAPReceiptSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9C0D175DBCC6007AF0CF /* IAPReceiptSender.m */; };
+		269D9C11175DC319007AF0CF /* IAPDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9C10175DC319007AF0CF /* IAPDispatcher.m */; };
 		26B98B85175B37F300C5FBEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B84175B37F300C5FBEA /* UIKit.framework */; };
 		26B98B87175B37F300C5FBEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B86175B37F300C5FBEA /* Foundation.framework */; };
 		26B98B89175B37F300C5FBEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B98B88175B37F300C5FBEA /* CoreGraphics.framework */; };
@@ -46,6 +47,8 @@
 		269D9C0A175DBC8F007AF0CF /* IAPProductPurchaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProductPurchaser.m; sourceTree = "<group>"; };
 		269D9C0C175DBCC6007AF0CF /* IAPReceiptSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPReceiptSender.h; sourceTree = "<group>"; };
 		269D9C0D175DBCC6007AF0CF /* IAPReceiptSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPReceiptSender.m; sourceTree = "<group>"; };
+		269D9C0F175DC318007AF0CF /* IAPDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPDispatcher.h; sourceTree = "<group>"; };
+		269D9C10175DC319007AF0CF /* IAPDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPDispatcher.m; sourceTree = "<group>"; };
 		26B98B81175B37F300C5FBEA /* In-App-Purchase-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In-App-Purchase-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B98B84175B37F300C5FBEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26B98B86175B37F300C5FBEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				269D9BF8175CDA03007AF0CF /* IAPProductDetailViewController.h */,
 				269D9BF9175CDA03007AF0CF /* IAPProductDetailViewController.m */,
 				269D9BFA175CDA03007AF0CF /* IAPProductDetailViewController.xib */,
+				269D9C0F175DC318007AF0CF /* IAPDispatcher.h */,
+				269D9C10175DC319007AF0CF /* IAPDispatcher.m */,
 				269D9C06175DBC78007AF0CF /* IAPProductListLoader.h */,
 				269D9C07175DBC78007AF0CF /* IAPProductListLoader.m */,
 				269D9C09175DBC8F007AF0CF /* IAPProductPurchaser.h */,
@@ -220,6 +225,7 @@
 				269D9C08175DBC78007AF0CF /* IAPProductListLoader.m in Sources */,
 				269D9C0B175DBC8F007AF0CF /* IAPProductPurchaser.m in Sources */,
 				269D9C0E175DBCC6007AF0CF /* IAPReceiptSender.m in Sources */,
+				269D9C11175DC319007AF0CF /* IAPDispatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
