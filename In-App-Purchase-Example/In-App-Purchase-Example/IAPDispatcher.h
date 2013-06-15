@@ -1,6 +1,9 @@
 /*!
  @header
- @abstract IAPDispatcher class header
+ @abstract In-App Purchase Dispatcher
+ @copyright Hidenori MATSUKI
+ @author Hidenori MATSUKI
+ @updated 2013-06-04
  */
 
 //
@@ -16,7 +19,6 @@
 @class IAPDispatcher;
 
 /*!
- @protocol
  @abstract IAPデリゲート
  @discussion IAPDispatcherからの通知を規定する.
  @dependency IAPDispatcher
@@ -25,88 +27,97 @@
 
 @optional
 
+#pragma mark - Prepare
+
 /*!
- @functiongroup Prepare
- @method
+ @methodgroup Prepare
+ */
+
+/*!
  @abstract 事前処理終了通知(成功)
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFinishPrepare:(NSArray *)productList;
+
 /*!
- @functiongroup Prepare
  @method
  @abstract 事前処理終了通知(失敗)
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFailPrepare:(NSArray *)productList withErrors:(NSArray *)errors;
 
+#pragma mark - Load products
+
 /*!
- @functiongroup Load products
+ @methodgroup Load products
+ */
+
+/*!
  @method
  @abstract 商品一覧取得開始前通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcherWillStartLoadingProductList:(IAPDispatcher *)dispatcher;
+
 /*!
- @functiongroup Load products
  @method
  @abstract 商品一覧取得開始後通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcherDidStartLoadingProductList:(IAPDispatcher *)dispatcher;
 /*!
- @functiongroup Load products
  @method
  @abstract 商品一覧取得終了前通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcherWillFinishLoadingProductList:(IAPDispatcher *)dispatcher;
 /*!
- @functiongroup Load products
  @method
  @abstract 商品一覧取得終了通知(成功)
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFinishLoadingProductList:(NSArray *)productList;
 /*!
- @functiongroup Load products
  @method
  @abstract 商品一覧取得終了通知(失敗)
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFailLoadingProductList:(NSArray *)productList withErrors:(NSArray *)errors;
 
+#pragma mark - Purchase products
+
 /*!
- @functiongroup Purchase products
+ @methodgroup Purchase products
+ */
+
+/*!
  @method
  @abstract 商品購入開始前通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcherWillStartPurchase:(IAPDispatcher *)dispatcher;
 /*!
- @functiongroup Purchase products
  @method
  @abstract 商品購入開始後通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcherDidStartPurchase:(IAPDispatcher *)dispatcher;
 /*!
- @functiongroup Purchase products
  @method
  @abstract 商品購入開始後通知
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher willStartPurchaseWithProductIdentifier:(NSString *)productIdentifier;
 /*!
- @functiongroup Purchase products
  @method
  @abstract 商品購入終了通知(成功)
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFinishPurchaseProduct:(NSArray *)productList;
 /*!
- @functiongroup Purchase products
  @method
  @abstract 商品購入終了通知(失敗)
- @param dispatcher
+ @param dispatcher IAP実行クラス
  */
 - (void)dispatcher:(IAPDispatcher *)dispatcher didFailPurchaseProduct:(NSArray *)productList withErrors:(NSArray *)errors;
 
@@ -131,12 +142,17 @@
     BOOL inProgress;
 }
 
+/*!
+ @method
+ @abstract 商品IDを追加する
+ @param productIdentifier 追加する商品ID
+ */
 - (BOOL)addProductIdentifier:(NSString *)productIdentifier;
 
 /*!
  @method
  @abstract 前処理
- @discussion
+ @discussion 
  <dl>
     <dt>行うこと</dt>
     <dd>決済可能か検証する(iOS端末の設定で決済が許可されているか)</dd>
@@ -146,6 +162,7 @@
  </dl>
  */
 - (void)prepare;
+
 /*!
  @method
  @abstract 商品一覧を取得する
@@ -156,6 +173,7 @@
     <dt>行わないこと</dt>
     <dd>決済</dd>
  </dl>
+ @param productList 商品ID一覧
  */
 - (void)loadProducts:(NSArray *)productList;
 /*!
