@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26751CE8176C876600A21C46 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26751CE6176C875900A21C46 /* StoreKit.framework */; };
 		269D9BF6175CD9E1007AF0CF /* IAPProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9BF4175CD9E1007AF0CF /* IAPProductListViewController.m */; };
 		269D9BF7175CD9E1007AF0CF /* IAPProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269D9BF5175CD9E1007AF0CF /* IAPProductListViewController.xib */; };
 		269D9BFB175CDA03007AF0CF /* IAPProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269D9BF9175CDA03007AF0CF /* IAPProductDetailViewController.m */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26751CE6176C875900A21C46 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		269D9BF3175CD9E1007AF0CF /* IAPProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPProductListViewController.h; sourceTree = "<group>"; };
 		269D9BF4175CD9E1007AF0CF /* IAPProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPProductListViewController.m; sourceTree = "<group>"; };
 		269D9BF5175CD9E1007AF0CF /* IAPProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAPProductListViewController.xib; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26751CE8176C876600A21C46 /* StoreKit.framework in Frameworks */,
 				26B98B85175B37F300C5FBEA /* UIKit.framework in Frameworks */,
 				26B98B87175B37F300C5FBEA /* Foundation.framework in Frameworks */,
 				26B98B89175B37F300C5FBEA /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +101,7 @@
 		26B98B83175B37F300C5FBEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26751CE6176C875900A21C46 /* StoreKit.framework */,
 				26B98B84175B37F300C5FBEA /* UIKit.framework */,
 				26B98B86175B37F300C5FBEA /* Foundation.framework */,
 				26B98B88175B37F300C5FBEA /* CoreGraphics.framework */,
@@ -155,6 +159,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B98B9E175B37F300C5FBEA /* Build configuration list for PBXNativeTarget "In-App-Purchase-Example" */;
 			buildPhases = (
+				26751CEA176CA4F700A21C46 /* ShellScript */,
 				26B98B7D175B37F300C5FBEA /* Sources */,
 				26B98B7E175B37F300C5FBEA /* Frameworks */,
 				26B98B7F175B37F300C5FBEA /* Resources */,
@@ -210,6 +215,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26751CEA176CA4F700A21C46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf documents/headerdoc/\\*\nmkdir -p documents/headerdoc/\nfind . -name \\*.h -print0 | xargs -0 /usr/bin/headerdoc2html -d -o documents/headerdoc\n/usr/bin/gatherheaderdoc documents/headerdoc";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26B98B7D175B37F300C5FBEA /* Sources */ = {
